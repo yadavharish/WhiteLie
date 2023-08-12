@@ -1,0 +1,18 @@
+[
+  {
+    "name": "appName",
+    "value": 0
+  },
+  {
+    "name": "permissionsRequested",
+    "value": 1
+  },
+  {
+    "name": "permissionsGranted",
+    "value": 2
+  },
+  {
+    "name": "permissionsDeceived",
+    "value": 3
+  }
+]

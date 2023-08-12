@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp">
+            <View
+                android:id="@+id/vLogoTopBar"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/black11"
+                app:layout_constraintBottom_toTopOf="@+id/ivLogAppIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/ivLogAppIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/vLogoBottomBar"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/black11"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogAppIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="@color/theme1Blue"
+            android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvLogAppName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/red_hat_mono_medium"
+                            android:singleLine="true"
+                            android:text="App Name"
+                            android:textColor="@color/theme1Green2"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/tvLogTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/theme1Green2"
+                            android:text="01 Jan 2000 00:00:00"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvLogPackageName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/theme1Green2"
+                        android:layout_marginBottom="8dp"
+                        android:text="com.package.name"/>
+                    <TextView
+                        android:id="@+id/tvLogMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme1Green2"
+                        android:text="Log Message"/>
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

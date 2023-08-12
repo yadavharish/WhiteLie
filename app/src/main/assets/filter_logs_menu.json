@@ -1,0 +1,14 @@
+[
+  {
+    "name": "all",
+    "value": 0
+  },
+  {
+    "name": "system",
+    "value": 1
+  },
+  {
+    "name": "userInstalled",
+    "value": 2
+  }
+]

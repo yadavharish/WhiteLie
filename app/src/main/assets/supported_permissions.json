@@ -1,0 +1,74 @@
+[
+  {
+    "permission": "android.permission.READ_CONTACTS",
+    "name": "account"
+  },
+  {
+    "permission": "android.permission.ACTIVITY_RECOGNITION",
+    "name": "activityRecognition"
+  },
+  {
+    "permission": "",
+    "name": "applications"
+  },
+  {
+    "permission": "android.permission.RECORD_AUDIO",
+    "name": "audio"
+  },
+  {
+    "permission": "android.permission.READ_CALENDAR",
+    "name": "calendar"
+  },
+  {
+    "permission": "android.permission.READ_CALL_LOG",
+    "name": "callLog"
+  },
+  {
+    "permission": "android.permission.CAMERA",
+    "name": "camera"
+  },
+  {
+    "permission": "",
+    "name": "clipboard"
+  },
+  {
+    "permission": "android.permission.READ_CONTACTS",
+    "name": "contacts"
+  },
+  {
+    "permission": "android.permission.ACCESS_COARSE_LOCATION",
+    "name": "location"
+  },
+  {
+    "permission": "android.permission.READ_SMS",
+    "name": "message"
+  },
+  {
+    "permission": "android.permission.ACCESS_NETWORK_STATE",
+    "name": "network"
+  },
+  {
+    "permission": "android.permission.GET_ACCOUNTS",
+    "name": "notifications"
+  },
+  {
+    "permission": "",
+    "name": "sensor"
+  },
+  {
+    "permission": "android.permission.READ_SYNC_STATS",
+    "name": "sync"
+  },
+  {
+    "permission": "android.permission.READ_PHONE_STATE",
+    "name": "telephony"
+  },
+  {
+    "permission": "",
+    "name": "tracking"
+  },
+  {
+    "permission": "android.permission.CAMERA",
+    "name": "video"
+  }
+]

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">whitelie</string>
+    <string name="title_home">home</string>
+    <string name="title_settings">settings</string>
+    <string name="title_logs">logs</string>
+    <string name="title_deceiver">whitelie</string>
+    <string name="title_deceits">deceits</string>
+    <string name="title_about">about</string>
+    <string name="module_properly_installed">module is properly installed &amp; running.</string>
+    <string name="module_not_properly_installed">module is not properly installed.</string>
+    <string name="xposeddescription">A Xposed Module that can deceive user data based upon user policies.</string>
+</resources>

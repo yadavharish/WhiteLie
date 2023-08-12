@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="in.hyiitd.whitelie.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_deceiver_app"
+            app:destination="@id/navigation_deceiver_app" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_deceits"
+            app:destination="@id/navigation_deceits" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deceiver"
+        android:name="in.hyiitd.whitelie.ui.deceiver.DeceiverFragment"
+        android:label="@string/title_deceiver"
+        tools:layout="@layout/fragment_deceiver" >
+        <action
+            android:id="@+id/action_navigation_deceiver_to_navigation_deceiver_app"
+            app:destination="@id/navigation_deceiver_app" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_logs"
+        android:name="in.hyiitd.whitelie.ui.logs.LogsFragment"
+        android:label="@string/title_logs"
+        tools:layout="@layout/fragment_logs" >
+        <action
+            android:id="@+id/action_navigation_logs_to_navigation_deceiver_app"
+            app:destination="@id/navigation_deceiver_app" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="in.hyiitd.whitelie.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_deceits"
+            app:destination="@id/navigation_deceits" />
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_about"
+            app:destination="@id/navigation_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deceiver_app"
+        android:name="in.hyiitd.whitelie.ui.deceiver.DeceiverAppFragment"
+        tools:layout="@layout/fragment_deceiver_app" >
+        <argument
+            android:name="appData"
+            app:argType="in.hyiitd.whitelie.ui.deceiver.DeceiverAppNavData" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deceits"
+        android:name="in.hyiitd.whitelie.ui.settings.DeceitsFragment"
+        android:label="@string/title_deceits"
+        tools:layout="@layout/fragment_deceits" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="in.hyiitd.whitelie.ui.settings.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" >
+    </fragment>
+</navigation>

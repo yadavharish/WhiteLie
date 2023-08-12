@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/selector_btm_nav_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_deceiver"
+        android:icon="@drawable/selector_btm_nav_deceiver"
+        android:title="@string/title_deceiver" />
+
+    <item
+        android:id="@+id/navigation_logs"
+        android:icon="@drawable/selector_btm_nav_report"
+        android:title="@string/title_logs" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/selector_btm_nav_settings"
+        android:title="@string/title_settings" />
+
+</menu>

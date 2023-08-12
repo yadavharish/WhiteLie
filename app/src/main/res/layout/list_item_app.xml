@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvApp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/theme1Blue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,1:1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:id="@+id/ivAppIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ivCriticalIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/critical_triangle_outline"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+<!--            android:ellipsize="marquee"-->
+<!--            android:singleLine="true"-->
+<!--            android:marqueeRepeatLimit="marquee_forever"-->
+<!--            android:scrollHorizontally="true"-->
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="#444444"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tvPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444"
+                android:textSize="11sp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/ivNoOfPermsReqIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pencil_square"/>
+                <TextView
+                    android:id="@+id/tvNoOfPermsReq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:text="200"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="5dp"/>
+                <ImageView
+                    android:id="@+id/ivNoOfPermsGrantIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thumbs_up"/>
+                <TextView
+                    android:id="@+id/tvNoOfPermsGrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:text="200"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="5dp"/>
+                <ImageView
+                    android:id="@+id/ivNoOfPermsSpoofIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shield_check"/>
+                <TextView
+                    android:id="@+id/tvNoOfPermsSpoof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:text="20"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
